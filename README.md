@@ -20,8 +20,8 @@ at `/api/categories`, `/api/categories/:id`, `/api/tags`, and `/api/tags/:id`.
 [Watch a sample usage video](https://drive.google.com/file/d/102Pfmk53waXZr1atkuyTbnEw2m5FTQ5P/view)
 
 ## Credits
-The initial files (sample data and a skeleton outline) were provided by University of Toronto Coding Bootcamp.
-In addition, I used the following packages:
+The initial files (sample data, a skeleton outline, and POST and PUT routes for products) were provided by 
+University of Toronto Coding Bootcamp.  In addition, I used the following packages:
 * [sequelize](https://www.npmjs.com/package/sequelize)
 * [express](https://www.npmjs.com/package/express)
 * [mysql2](https://www.npmjs.com/package/mysql2)
