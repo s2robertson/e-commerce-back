@@ -50,8 +50,18 @@ router.post('/', async (req, res) => {
     }
 });
 
-router.put('/:id', (req, res) => {
-    // update a tag's name by its `id` value
+// update a tag's name by its `id` value
+router.put('/:id', async (req, res) => {
+    try {
+        const rowsUpdated = await Tag.update(req.body, {
+            where: {
+                id: req.params.id
+            }
+        });
+        res.json(rowsUpdated);
+    } catch (err) {
+        res.status(500).json(err);
+    }
 });
 
 router.delete('/:id', (req, res) => {
